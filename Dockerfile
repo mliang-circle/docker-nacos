@@ -1,4 +1,4 @@
-ARG NACOS_VERSION
-FROM nacos/nacos-server:$NACOS_VERSION
+ARG VERSION
+FROM nacos/nacos-server:$VERSION
 
 ADD conf/application.properties conf/application.properties

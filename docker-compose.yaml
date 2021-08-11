@@ -5,6 +5,9 @@ services:
     build:
       context: .
       args:
-        NACOS_VERSION: 2.0.3
+        <<: &labels
+          VERSION: v2.0.3
+      labels:
+        <<: *labels
     ports:
       - "8851:8848"
